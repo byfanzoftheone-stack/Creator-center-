@@ -21,14 +21,13 @@ export const api = {
   register: async (email: string, password: string) => {
     return { access_token: "mock-token" }
   },
-  stats: async (): Promise<Stats> => ({
-    productivity_score: 42,
-    done_today: 3,
-    doing: 2,
-    todo: 5
-  }),
-  listTasks: async (): Promise<Task[]> => [
-    { id: "1", title: "Task 1", status: "doing", priority: 1, due_date: "2026-02-20" },
-    { id: "2", title: "Task 2", status: "todo", priority: 2 }
-  ]
+  stats: async (): Promise<Stats> => {
+    return { productivity_score: 50, done_today: 3, doing: 2, todo: 5 }
+  },
+  listTasks: async (): Promise<Task[]> => {
+    return [
+      { id: "1", title: "Sample Task", status: "todo", priority: 1 },
+      { id: "2", title: "Another Task", status: "doing", priority: 2 },
+    ]
+  },
 }
