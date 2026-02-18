@@ -12,7 +12,7 @@ This guide walks you through deploying the Creator Center backend to Railway.
 1. Go to https://railway.app
 2. Click "New Project"
 3. Select "Deploy from GitHub repo"
-4. Choose this repository: `byfanzoftheone-stack/Creator-center-`
+4. Choose this repository from your GitHub account
 
 ### 2. Add PostgreSQL Database
 1. In your Railway project, click "New"
