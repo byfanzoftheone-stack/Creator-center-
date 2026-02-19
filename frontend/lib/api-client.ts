@@ -1,4 +1,4 @@
-l// frontend/lib/api-client.ts
+// frontend/lib/api-client.ts
 export interface Task {
   id: string
   title: string
