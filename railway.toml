@@ -1,6 +1,7 @@
 [build]
-builder = "nixpacks"
+builder = "NIXPACKS"
 
 [deploy]
-restartPolicyType = "on_failure"
+startCommand = "sh -lc 'cd backend && uvicorn app.main:app --host 0.0.0.0 --port ${PORT}'"
+restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
